@@ -64,7 +64,33 @@ if __name__ == '__main__':
         r'(\([^\)]+\))?!?' # Optional scope and exclamation mark
         ': .+') # Short summary / description
     if conventional_cpattern.fullmatch(lines[0]) is None:
-        print('Short description doesn\'t meet the conventional format rules',file = sys.stderr)
+        print('Short description doesn\'t meet the conventional format rules:\n'
+            ' Format: "type(scope)!: short description" '
+            'followed by an empty line and the body and footer.\n'
+
+            ' Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, '
+            'fix, perf, refactor, remove, revert, security, style, or test.\n'
+
+            ' (Scope) is an optional noun that describes the code section.\n'
+            ' The exclamation point is optional and it indicates breaking changes.\n'
+
+            '\n__Types For Features__\n'
+            ' feat: Add feature\n'
+            ' remove: Remove feature\n'
+            ' change: Change feature\n'
+            ' deprecate: Mark feature to be removed\n'
+            '\n__Other Types__\n'
+            ' build: Update build system files\n'
+            ' chore: Required periodic changes\n'
+            ' ci: Update configurations or continuouse integration files\n'
+            ' docs: Update documentation\n'
+            ' fix: Fix a bug\n'
+            ' perf: Improve performance without changing features\n'
+            ' refactor: Revise code without changing features\n'
+            ' revert: Remove a problematic commit\n'
+            ' security: Fix an bug that resolves a security issue\n'
+            ' style: Revise how code looks\n'
+            ' test: Update test code\n',file = sys.stderr)
         sys.exit(1)
 
     #Multiple lines
