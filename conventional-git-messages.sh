@@ -80,7 +80,7 @@ if __name__ == '__main__':
             ' remove: Remove feature\n'
             ' change: Change feature\n'
             ' deprecate: Mark feature to be removed\n'
-            ' wip: For use in feature branches\n'
+            ' wip: Work In Progress. Must be squashed away\n'
             '\n__Other Types__\n'
             ' build: Update build system files\n'
             ' chore: Required periodic changes\n'

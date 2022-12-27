@@ -15,7 +15,7 @@
 | remove | Remove feature |
 | change | Change feature |
 | deprecate | Mark feature to be removed |
-| wip | For use in feature branches |
+| wip | Work In Progress. Must be squashed |
 
 | Other | Description |
 | :--- | :--- |
