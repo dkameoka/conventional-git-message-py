@@ -60,6 +60,7 @@ if __name__ == '__main__':
             'security|'
             'style|'
             'test|'
+            'version|'
             'wip'
         ')'
         r'(\([^\)]+\))?!?' # Optional scope and exclamation mark
@@ -70,7 +71,7 @@ if __name__ == '__main__':
             'followed by an empty line and the body and footer.\n'
 
             ' Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, '
-            'fix, perf, refactor, remove, revert, security, style, test, or wip.\n'
+            'fix, perf, refactor, remove, revert, security, style, test, version, or wip.\n'
 
             ' (Scope) is an optional noun that describes the code section.\n'
             ' The exclamation point is optional and it indicates breaking changes.\n'
@@ -92,7 +93,8 @@ if __name__ == '__main__':
             ' revert: Remove a problematic commit\n'
             ' security: Fix an bug that resolves a security issue\n'
             ' style: Revise how code looks\n'
-            ' test: Update test code\n',file = sys.stderr)
+            ' test: Update test code\n'
+            ' version: Bump the version\n',file = sys.stderr)
         sys.exit(1)
 
     #Multiple lines

@@ -5,7 +5,7 @@
 
 ## Conventional Rules Supported
 * Follow the format: `type(scope)!: short description` followed by an empty line and the body and footer.
-* Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, fix, perf, refactor, remove, revert, security, style, test, or wip.
+* Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, fix, perf, refactor, remove, revert, security, style, test, version, or wip.
 * (Scope) is an optional noun that describes the code section.
 * The exclamation point is optional and it indicates breaking changes.
 
@@ -30,6 +30,7 @@
 | security | Fix an bug that resolves a security issue |
 | style | Revise how code looks |
 | test | Update test code |
+| version | Bump the version |
 
 ## Requires
 * Bash
