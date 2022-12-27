@@ -59,7 +59,8 @@ if __name__ == '__main__':
             'revert|'
             'security|'
             'style|'
-            'test'
+            'test|'
+            'wip'
         ')'
         r'(\([^\)]+\))?!?' # Optional scope and exclamation mark
         ': .+') # Short summary / description
@@ -69,7 +70,7 @@ if __name__ == '__main__':
             'followed by an empty line and the body and footer.\n'
 
             ' Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, '
-            'fix, perf, refactor, remove, revert, security, style, or test.\n'
+            'fix, perf, refactor, remove, revert, security, style, test, or wip.\n'
 
             ' (Scope) is an optional noun that describes the code section.\n'
             ' The exclamation point is optional and it indicates breaking changes.\n'
@@ -79,6 +80,7 @@ if __name__ == '__main__':
             ' remove: Remove feature\n'
             ' change: Change feature\n'
             ' deprecate: Mark feature to be removed\n'
+            ' wip: For use in feature branches\n'
             '\n__Other Types__\n'
             ' build: Update build system files\n'
             ' chore: Required periodic changes\n'

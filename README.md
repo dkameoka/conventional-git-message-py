@@ -5,7 +5,7 @@
 
 ## Conventional Rules Supported
 * Follow the format: `type(scope)!: short description` followed by an empty line and the body and footer.
-* Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, fix, perf, refactor, remove, revert, security, style, or test.
+* Type must be one of the following: build, change, chore, ci, deprecate, docs, feat, fix, perf, refactor, remove, revert, security, style, test, or wip.
 * (Scope) is an optional noun that describes the code section.
 * The exclamation point is optional and it indicates breaking changes.
 
@@ -15,6 +15,7 @@
 | remove | Remove feature |
 | change | Change feature |
 | deprecate | Mark feature to be removed |
+| wip | For use in feature branches |
 
 | Other | Description |
 | :--- | :--- |
